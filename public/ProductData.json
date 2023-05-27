@@ -1,0 +1,101 @@
+
+
+[
+    {   
+        "id": 1,
+        "name": "MICHAEL CORS",
+        "price": 220,
+        "url": "./img/img_1_blue.jpg",
+        "partNumber": "m/1245",
+        "color": "blue"
+    },
+    {
+        "id": 2,
+        "name": "CELIN",
+        "price": 150,
+        "url":"./img/img_3_black.jpg",
+        "partNumber": "c/3568",
+        "color": "black"
+    },
+    {
+        "id": 3,
+        "name": "CHISPAULO",
+        "price": 170,
+        "url":"./img/img_8_brown.jpg",
+        "partNumber": "c/6548",
+        "color": "brown"
+    },
+    {
+        "id": 4,
+        "name": "DKNY",
+        "price": 270,
+        "url":"./img/img_10_gold.jpg",
+        "partNumber": "d/9874",
+        "color": "gold"
+    },
+    {
+        "id": 5,
+        "name": "LOUIS VUITTON",
+        "price": 400,
+        "url":"./img/img_13_rose.jpg",
+        "partNumber": "l/8457",
+        "color": "rose"
+    },
+    {
+        "id": 6,
+        "name": "LONGCHAMP",
+        "price": 155,
+        "url":"./img/img_7_beage.jpg",
+        "partNumber": "l/6542",
+        "color": "beage"
+    },
+    {
+        "id": 7,
+        "name": "CHANEL",
+        "price": 2500,
+        "url":"./img/img_18_black.jpg",
+        "partNumber": "b/6578",
+        "color": "black"
+    },
+    {
+        "id": 8,
+        "name": "PRADA",
+        "price": 1500,
+        "url":"./img/img_16_crema.jpg",
+        "partNumber": "c/1216",
+        "color": "crema"
+    },
+    {
+        "id": 9,
+        "name": "SANDRA HELLBERG",
+        "price": 230,
+        "url":"./img/img_12_landscape.jpg",
+        "partNumber": "s/8526",
+        "color": "landscape"
+    },
+    {
+        "id": 10,
+        "name": "VERSACE JEANS",
+        "price": 370,
+        "url":"./img/img_11_grey.jpg",
+        "partNumber": "g/9731",
+        "color": "grey"
+    },
+    {
+        "id": 11,
+        "name": "CAROLINA HERRERA",
+        "price": 1500,
+        "url":"./img/img_17_mocco.jpg",
+        "partNumber": "m/1596",
+        "color": "mocco"
+    },
+    {
+        "id": 12,
+        "name": "CHRISTIAN DIOR",
+        "price": 370,
+        "url":"./img/img_9_darkblue.jpg",
+        "partNumber": "b/7412",
+        "color": "darkblue"
+    }
+
+]

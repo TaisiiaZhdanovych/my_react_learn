@@ -1,0 +1,54 @@
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin: 50px auto 20px auto;
+  
+    width: 100%;
+    
+    background-color:honeydew;
+    box-shadow:2px 2px 4px 0 rgb(46, 54, 54);
+    border-radius: 6px;
+    padding: 10px 25px 0 25px;
+}
+Link {
+    color: inherit;
+    text-decoration: none;
+}
+.fa-cart-shopping{
+    color:rgb(46, 54, 54);
+    margin-right: 15px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+    list-style-type: none;
+
+}
+li{
+margin-left: 70px;
+
+}
+
+.header__star {
+    font-size: 40px;
+        font-weight: 800;
+    color:grey;
+    margin-right: 15px;
+}
+
+.header__star-active {
+font-size: 40px;
+    font-weight: 800;
+    color: red;
+    margin-right: 15px;
+}
+.header_logo-text{
+    text-decoration: none;
+  
+    color: darkslategrey;
+}
