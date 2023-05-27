@@ -1,4 +1,4 @@
-// import { modalTypes, productsTypes } from "../types";
+
 import { productsTypes } from "../types";
 import { faveJsonParse } from "../../Helpers/OtherFunction";
 
@@ -27,7 +27,7 @@ export function productsReducer(state = initialState, action) {
 
         return { ...state, favorits: newArr };
 
-      case productsTypes.FILL_CART: // крок 2
+      case productsTypes.FILL_CART: 
         let newArrCart;
        
         if (!cart.includes(action.payload)) {
@@ -38,9 +38,9 @@ export function productsReducer(state = initialState, action) {
         localStorage.setItem("cart", JSON.stringify(newArrCart));
         return { ...state, cart: newArrCart };
 
-      case productsTypes.DEL_CART: // крок 2
+      case productsTypes.DEL_CART: 
         let newArrDelCart;
-       // const { cart } = state;
+       
         newArrDelCart = cart.filter((item) => item !== action.payload);
        
         return { ...state, cart: newArrDelCart };

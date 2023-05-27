@@ -22,23 +22,6 @@ export function Home (props) {
   
   
   
-  // useEffect(() => {                                         // знадобиться
-    
-  //  localStorage.setItem('favorits', JSON.stringify(favorits));
-    
-  
-  //     localStorage.setItem('cart', JSON.stringify(cart));
-   
-  //  }, [favorits, cart]);
-
-
-  
-
- 
-
-  
-  
-  
   
   function checkHandler(value) {          
     switch (value) {

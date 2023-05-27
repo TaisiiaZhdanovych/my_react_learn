@@ -9,5 +9,5 @@ export const productsTypes = {
 export const modalTypes = {
   OPEN_MODAL: "OPEN_MODAL",
   CLOSE_MODAL: "CLOSE_MODAL"
-                                           //крок 3              this
+                                           
 };

@@ -5,5 +5,5 @@ import { modalsReducer as modal } from "./reducers/modalReducer";
 
 export const rootReducer = combineReducers({
     products,
-    modal                                             //this
+    modal                                             
 });

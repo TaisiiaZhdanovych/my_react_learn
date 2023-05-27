@@ -7,14 +7,14 @@ import { Cart } from "./Pages/Cart/Cart";
 import { Favorits } from "./Pages/Favorits/Favorits";
 import { Home } from "./Pages/Home";
 import StartPage from "./Pages/StartPage";
-// import Products from "./components/Products/Products";
+
 
 
 
 function App() {
   return (
     <>
-      {/* <Products/> */}
+      
       <Routes>
         <Route path="/" element={<Home />}>
           <Route index element={<StartPage />} />
