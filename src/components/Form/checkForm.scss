@@ -1,0 +1,41 @@
+.check__form{
+    position: absolute;
+    background-color:honeydew;
+    min-width: 350px;
+    margin-top: 50px;
+    padding: 15px 15px;
+    border-radius: 6px;
+    font-size: 20px;
+    text-align: left;
+    right: 10px;
+    top: 95px;
+   
+}
+
+.check__inp-title{
+  margin-top: 20px;
+//   margin-bottom: -15px;  
+}
+
+.check__inp{
+display: block;
+ height: 50px;
+ width: 100%;
+ border-radius: 6px; 
+//  margin-top: 10px; 
+ border: none;
+ box-shadow: -2px 2px 4px 1px #202621; 
+}
+
+.check__btn-submit{
+ margin-top: 50px;
+ width: 100%;
+ border-radius: 6px;
+ height: 35px;
+border: none;
+box-shadow: -2px 2px 4px 1px #202621;
+}
+
+.error{
+    color:red
+}

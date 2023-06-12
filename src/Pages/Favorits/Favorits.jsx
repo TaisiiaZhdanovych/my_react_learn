@@ -13,9 +13,9 @@ export function Favorits(props) {
     
   const {cardProducts, favorits} = useSelector((state) =>  state.products);
     
-  
+  console.log( "ighiuh", cardProducts);
 
- console.log(addToFavorite);
+
     return (
       
         

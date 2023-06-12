@@ -5,9 +5,8 @@ import { faveJsonParse } from "../../Helpers/OtherFunction";
 
 
 const initialState = {
-
   cardProducts: [],
-  favorits: faveJsonParse("favorits"), 
+  favorits: faveJsonParse("favorits"),
   cart: faveJsonParse("cart"),
 };
 
@@ -44,6 +43,13 @@ export function productsReducer(state = initialState, action) {
         newArrDelCart = cart.filter((item) => item !== action.payload);
        
         return { ...state, cart: newArrDelCart };
+
+      
+      case productsTypes.CHECKOUT_CART:
+
+        localStorage.removeItem('cart');
+        return { ...state, cart: [] };
+        
 
       default:
         return state;

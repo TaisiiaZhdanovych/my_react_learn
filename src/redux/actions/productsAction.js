@@ -40,8 +40,20 @@ export function getProductsAsync() {
      type: productsTypes.DEL_CART,
      payload: id,
    };
- };
+};
+ 
+export const informAboutCheckProducts = () => {
+  return {
+    type: productsTypes.TRANSFORM_CART
+  }
+};
 
+export const checkOutCart = () => { 
+  return {
+    type: productsTypes.CHECKOUT_CART
+  }
+}
+  
 
 // dispatch action creator -> middleware(redux-thunk) -> store -> reducer -> store -> useSelector
 

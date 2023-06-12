@@ -21,6 +21,11 @@ export function Home (props) {
  }, [dispatch]);
   
   
+  useEffect(() => {
+    // Збереження даних в localStorage при зміні `cart` або `favorits`
+    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("favorits", JSON.stringify(favorits));
+  }, [cart, favorits]);
   
   
   function checkHandler(value) {          
