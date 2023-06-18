@@ -6,6 +6,8 @@ export const productsTypes = {
   DEL_CART: "DEL_CART",
   CHECKOUT_CART: "CHECKOUT_CART",
   TRANSFORM_CART: "TRANSFORM_CART",
+  ADD_COUNT: "ADD_COUNT",
+  REMOVE_COUNT: "REMOVE_COUNT",
 };
 
 export const modalTypes = {

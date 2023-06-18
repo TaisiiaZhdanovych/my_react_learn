@@ -1,0 +1,39 @@
+
+
+.counter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    position: absolute;
+    left: 250px;
+    // top: 90%;
+    // bottom: 300px;
+    margin-top: -300px;
+    
+}
+
+.counter__btn{
+   
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+    width: 50px;
+    height: 50px;
+    background-color: #198754;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    border: none;
+    border-radius: 6px;
+}
+
+.counter__number{
+    color: black;
+    font-size: 30px;
+    font-size: 400;
+    margin-top: 15px;
+    
+}

@@ -25,7 +25,11 @@ function StartPage(props) {
                              
         addToFavorite={addToFavorite}
        
-           handleModalActive={handleModalActive}
+       handleModalActive={handleModalActive}
+       
+            childrenProps={{
+             hideButtonCount:true,
+              }}
     />
 }
 

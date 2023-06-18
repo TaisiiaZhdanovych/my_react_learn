@@ -22,7 +22,7 @@ let userSchema = object().shape({
 
 
 
-export const SignupForm = ({ totalPrice }) => {
+export const SignupForm = ({ totalPrice}) => {
   // Note that we have to initialize ALL of fields with values. These
   // could come from props, but since we don’t want to prefill this form,
   // we just use an empty string. If we don’t do this, React will yell
@@ -31,9 +31,10 @@ export const SignupForm = ({ totalPrice }) => {
   
   
   const dispatch = useDispatch();
-  const { cardProducts} = useSelector((state) => state.products);
-
-
+  const {cardProducts, cart} = useSelector((state) => state.products);
+  // const { cart} = useSelector((state) => state.products);
+  console.log(cardProducts, cart);
+  
   const formik = useFormik({
     initialValues: {
       firstName: "",
@@ -47,14 +48,16 @@ export const SignupForm = ({ totalPrice }) => {
 
 validationSchema: userSchema,
     onSubmit: (values) => {
-      const cartData = JSON.parse(localStorage.getItem('cart'));
-      
-       const cartArr = cartData.map((id) => {
-    const product = cardProducts.find((item) => item.id === id);
+      // const cartData = JSON.parse(localStorage.getItem('cart'));
+   
+      const cartArr = cart.map((item) => {
+  const id = parseInt(item.id); // Перетворити рядок на число
+  const product = cardProducts.find((item) => item.id === id);
     return {
       бренд: product.name,
       колір: product.color,
-      ціна: `$ ${ product.price }`
+      ціна: `$ ${product.price}`,
+      кількість: item.count,
     };
   });
     
@@ -64,6 +67,7 @@ validationSchema: userSchema,
         "totalPrice": `$ ${totalPrice}`
       };
       console.log(JSON.stringify(combinedData, null, 2));
+      // console.log(combinedData);
 
       dispatch(checkOutCart(combinedData));
     }

@@ -18,12 +18,26 @@ export function Cart() {
   const { cardProducts, cart } = useSelector((state) => state.products);
   
   const [totalPrice, setTotalPrice] = useState(0);
-
-  useEffect(() => {
-  const totalPrice = cardProducts.filter(item => cart.includes(item.id)).reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
-  setTotalPrice(totalPrice);
-}, [cardProducts, cart]);
+ 
   
+  // const cartsId = cart.map(item => item.id)
+  const cartsId = cart.map(item => item.id)
+
+//   useEffect(() => {
+//   const totalPrice = cardProducts.filter(item => cartsId.includes(item.id)).reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
+//   setTotalPrice(totalPrice);
+// }, [cardProducts, cart, cartsId]);
+  
+  useEffect(() => {
+    const totalPrice = cardProducts.filter(item => cartsId.includes(item.id)).reduce((accumulator, currentItem) => {
+      const cartItem = cart.find(cartItem => cartItem.id === currentItem.id);
+      const itemPrice = currentItem.price * cartItem.count;
+      return accumulator + itemPrice;
+    }, 0);
+    setTotalPrice(totalPrice);
+  }, [cardProducts, cart, cartsId]);
+
+
   const dispatch = useDispatch();
  
 
@@ -40,12 +54,13 @@ const toggleFormVisibility = () => {
         <>
           <div className="cart">
             <ProductList
-              cardProducts={cardProducts.filter((item) => cart.includes(item.id))}
+              cardProducts={cardProducts.filter((item) => cartsId.includes(item.id))}
               AddtoCart={dispatch(deleteFromCart)}
               handleModalActive={cartModalActive}
               childrenProps={{
                 buttonText: 'X',
-                style: { display: "none" }
+                style: { display: "none" },
+                hideCountButton: true
               }}
             />
             </div>
@@ -58,8 +73,7 @@ const toggleFormVisibility = () => {
              
               <button className="cart__btn" onClick={toggleFormVisibility }>ОФОРМИТИ ЗАМОВЛЕННЯ</button>    
               {formVisible && <div><SignupForm totalPrice={totalPrice}/></div>}
-               {/* <button className="cart__btn" >CHECKOUT</button>    
-              <SignupForm/> */}
+             
               
           </div>
         </>

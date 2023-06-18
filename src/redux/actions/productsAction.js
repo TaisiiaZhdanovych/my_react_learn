@@ -48,6 +48,26 @@ export const informAboutCheckProducts = () => {
   }
 };
 
+export const addCount = (id) => {
+  return {
+    type: productsTypes.ADD_COUNT,
+    payload: id,
+  };
+};
+export const removeCount = (id) => {
+  return {
+    type: productsTypes.REMOVE_COUNT,
+    payload: id,
+  };
+};
+
+export const Count = (id) => {
+  return {
+    type: productsTypes.ADD_COUNT,
+    payload: id,
+  };
+};
+
 export const checkOutCart = () => { 
   return {
     type: productsTypes.CHECKOUT_CART

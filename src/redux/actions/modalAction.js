@@ -35,12 +35,10 @@ export const handleModalActive = (active,id) => {
       let modalHeaderText = "Додати товар у корзину";
       let modalMainText = "Чи дійсно ви бажаєте додати товар у корзину?";
 
-      
-      if (products.cart.includes(id)) {
-       
+      const cartsId = products.cart.map((item) => item.id);
+      if (cartsId.includes(id)) {
         modalHeaderText = "Зверніть увагу";
-        modalMainText = "Toвар вже у корзині"; 
-        
+        modalMainText = "Toвар вже у корзині";
       }
      
       

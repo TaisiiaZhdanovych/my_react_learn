@@ -32,7 +32,8 @@ export function Favorits(props) {
            
             childrenProps={{
              hideButton:true,
-              style:{color:"red"}}} />: <i className="empty-text">Ви поки що нічого не обрали, переходьте до головної сторінки і обирайте!</i>}
+          style: { color: "red" },
+         hideButtonCount:true,}} /> : <i className="empty-text">Ви поки що нічого не обрали, переходьте до головної сторінки і обирайте!</i>}
             
             </div>  
             
