@@ -4,13 +4,16 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import {SettingsProvider} from "./components/Context/Settings";
 
 import { BrowserRouter as Router } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
-    <Router>
-      <App />
-    </Router>
-  </Provider>
+  <SettingsProvider settings={'cards'}>
+    <Provider store={store}>
+      <Router>
+        <App />
+      </Router>
+    </Provider>
+  </SettingsProvider>
 );

@@ -3,19 +3,23 @@
     justify-content: space-between;
     position: relative;
 }
-.cart{
+// .cart{
 
-// gap: 20px;
-// max-width: 80%;
-// flex-wrap: wrap;
+// // gap: 20px;
+// // max-width: 80%;
+// // flex-wrap: wrap;
+// }
+.cart__check{
+    margin-top: 20px;
+    min-width: 350px;
 }
 
 .cart__btn{
-    min-width: 345px;
+    // min-width: 345px;
     height: 50px;
     border: none;
     border-radius: 6px;
-    background-color:  #198754;;
+    background-color:  #198754;
     font-size: 20px;
     font-weight: 400;
     color:white;
@@ -28,6 +32,7 @@
  position: relative;
   display: flex;
  justify-content: right;
+ margin-bottom: 20px;
 //   justify-content: space-between;
 
 //   margin-right: 70px ;

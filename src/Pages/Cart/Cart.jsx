@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { deleteFromCart } from "../../redux/actions/productsAction";
 // import {SignupForm} from "../../components/Form/Form.js"
 import { SignupForm } from "../../components/Form/CheckForm";
+import ViewButton from "../../components/ViewButton/ViewButton";
 
 
 // {/* <div className="item-box row row-cols-2 row-cols-md-3 row-cols-lg-5 g-5"></div> */}
@@ -70,8 +71,8 @@ const toggleFormVisibility = () => {
                   <input type="text" className="price-input" placeholder="Total price" value={totalPrice} readOnly/>
               </div>
            
-             
-              <button className="cart__btn" onClick={toggleFormVisibility }>ОФОРМИТИ ЗАМОВЛЕННЯ</button>    
+              <ViewButton onClick={toggleFormVisibility} buttonText={"ОФОРМИТИ ЗАМОВЛЕННЯ"}/>
+              {/* <button className="cart__btn" onClick={toggleFormVisibility }>ОФОРМИТИ ЗАМОВЛЕННЯ</button>     */}
               {formVisible && <div><SignupForm totalPrice={totalPrice}/></div>}
              
               

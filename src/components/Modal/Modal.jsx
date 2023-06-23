@@ -14,7 +14,7 @@ function Modal(props) {
       <div className={props.active ? "modal__container active" : "modal__container"} onClick={(e) => e.stopPropagation()}>
         <div className="modal__header">
           <span className="modal__header-text">{props.headerText}</span>
-          <span className={props.active ? "modal__close" : ""} onClick={() => dispatch(props.onClick())}>X</span>
+          <span className={props.active ? "modal__close" : ""} data-testid="closeModal" onClick={() => dispatch(props.onClick())}>X</span>
         </div>
         <p className="modal__main-text">{props.mainText}</p>
         <div className="modal__btn-box">
