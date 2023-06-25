@@ -21,7 +21,7 @@ export function Favorits(props) {
         
        
            
-        <div className="item-box row row-cols-2 row-cols-md-3 row-cols-lg-5 g-5">{favorits.length?<ProductList
+        <div className="item-box row row-cols-md-3 row-cols-lg-5 g-4 w-75 flex-wrap">{favorits.length?<ProductList
           
             cardProducts={cardProducts.filter(item => favorits.includes(item.id))}
             
@@ -35,10 +35,10 @@ export function Favorits(props) {
           style: { color: "red" },
          hideButtonCount:true,}} /> : <i className="empty-text">Ви поки що нічого не обрали, переходьте до головної сторінки і обирайте!</i>}
             
-            </div>  
+         
             
             
-
+</div>
   
 
     )

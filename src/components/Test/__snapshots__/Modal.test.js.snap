@@ -1,5 +1,91 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`modal onClick closeTest modal 1`] = `
+<DocumentFragment>
+  <div
+    class="modal"
+  >
+    <div
+      class="modal__container"
+    >
+      <div
+        class="modal__header"
+      >
+        <span
+          class="modal__header-text"
+        />
+        <span
+          class=""
+          data-testid="closeModal"
+        >
+          X
+        </span>
+      </div>
+      <p
+        class="modal__main-text"
+      />
+      <div
+        class="modal__btn-box"
+      >
+        <button
+          class="modal__button"
+        >
+          Так
+        </button>
+        <button
+          class="modal__button"
+        >
+          Ні
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`modal render modal 1`] = `
+<DocumentFragment>
+  <div
+    class="modal"
+  >
+    <div
+      class="modal__container"
+    >
+      <div
+        class="modal__header"
+      >
+        <span
+          class="modal__header-text"
+        />
+        <span
+          class=""
+          data-testid="closeModal"
+        >
+          X
+        </span>
+      </div>
+      <p
+        class="modal__main-text"
+      />
+      <div
+        class="modal__btn-box"
+      >
+        <button
+          class="modal__button"
+        >
+          Так
+        </button>
+        <button
+          class="modal__button"
+        >
+          Ні
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
 exports[`render modal 1`] = `
 <DocumentFragment>
   <div

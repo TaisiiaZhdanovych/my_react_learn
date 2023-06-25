@@ -48,6 +48,7 @@
     ]
   },
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-serializer-html": "^7.1.0"
   }
 }

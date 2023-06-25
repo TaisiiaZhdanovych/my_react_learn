@@ -3,14 +3,18 @@
 .item-box {
 
     display: flex;
-
+// flex-wrap: wrap;
     height: 60vh;
-    width: 90%;
-
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
+    
 
 }
-
+// .custom-row-cols [class^="col-"],
+// .custom-row-cols [class*=" col-"] {
+//     flex-basis: calc(100% / 4);
+// }
 .empty-text {
     width: 600px;
     justify-content: center;
